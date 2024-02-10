@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Arte en Canvas</title>
+  <style>
+      canvas{
+          border: 3px solid brown;
+          background-color: white;
+          display: block;
+          margin: auto;
+      }
+  </style>
+</head>
+<body>
+   <canvas id="micanvas" width="800" height="600"></canvas>
+
+<script>
+  window.onload=function(){
+      var canvas = document.getElementById("micanvas");
+      var context = canvas.getContext("2d");
+
+      // Rectángulos y cuadrados
+      context.fillStyle = "rgba(115,3,252,.5)";
+      context.fillRect(50,50,200,100);
+
+      context.fillStyle = "rgba(3,98,252,.5)";
+      context.fillRect(300,200,150,150);
+
+      context.fillStyle = "rgba(252,3,236,.5)";
+      context.fillRect(500,100,100,200);
+
+      context.fillStyle = "rgba(252,186,3,.5)";
+      context.fillRect(200,400,180,120);
+
+      context.fillStyle = "rgba(155,286,67,.5)";
+      context.fillRect(400,400,250,150);
+
+      // Cuadrados más pequeños
+      context.fillStyle = "rgba(255,0,0,.5)";
+      context.fillRect(100,200,50,50);
+
+      context.fillStyle = "rgba(0,255,0,.5)";
+      context.fillRect(600,300,70,70);
+
+      context.fillStyle = "rgba(0,0,255,.5)";
+      context.fillRect(500,450,40,40);
+
+      context.fillStyle = "rgba(255,255,0,.5)";
+      context.fillRect(100,500,60,60);
+  }
+</script>
+
+</body>
+</html>
